@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.modal__container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.296);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__container.active {
+    display: flex;
+}
+
+.open__modal {
+    padding: 12px;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    margin: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 40%;
+    position: relative;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    gap: 20px;
+}
+
+.form input {
+    width: 350px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.close__modal {
+    position: absolute;
+    border: none;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 36px;
+    background-color: transparent;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.modal__content {
+    line-height: 160%;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background-color: #c8c8c8;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px #c8c8c8;
+    max-width: fit-content;
+    margin: 40px auto;
+    gap: 15px;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 16px 30px;
+    font-size: 18px;
+}
+
+.tab.active {
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.content {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 40px;
+    line-height: 150%;
+    display: none;
+}
+
+.contenttt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenttt img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.contenttt p {
+    font-size: 18px;
+    width: 450px;
+}
+
+.content.active {
+    display: block;
+}
